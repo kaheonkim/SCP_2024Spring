@@ -48,7 +48,3 @@ def sum_of_digits(n):
 # Example usage
 print(sum_of_digits(12345))  # Output: 15 (1 + 2 + 3 + 4 + 5)
 print(sum_of_digits(987654321))
-
-
-
-
