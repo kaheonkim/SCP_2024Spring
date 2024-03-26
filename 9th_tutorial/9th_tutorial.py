@@ -23,10 +23,10 @@ line = lines[0]
 splited_line = [int(i) for i in line.strip().split(";")]
 
 
-matrix = []
+matrix1 = []
 for line in lines:
     splited_line = [int(i) for i in line.strip().split(";")]
-    matrix.append(splited_line)
+    matrix1.append(splited_line)
     
     
     
@@ -51,15 +51,15 @@ with open("input_tutorial2.txt", "r") as input_file:
     lines = input_file.readlines()
     
 
-matrix = []
+matrix2 = []
 for line in lines:
     splited = line.strip().split("|")
     splited_line = [int(i) for i in splited]
-    matrix.append(splited_line)
+    matrix2.append(splited_line)
 
 
 
 with open("output_mean_2.txt","w") as output_file:
-    for entry in matrix:
+    for entry in matrix2:
         mean = sum(entry)/len(entry)
         output_file.write(f"{mean}\n")
