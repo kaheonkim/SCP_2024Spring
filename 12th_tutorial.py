@@ -126,3 +126,27 @@ print(arith.subt())
 print(arith.mult())
 print(arith.div())
 print(arith.l_dist(2))
+
+
+    
+class Employee(Person):
+    def __init__(self, name, age, salary, position):
+        self.salary = salary
+        self.position = position
+
+        # invoking the __init__ of the parent class
+        Person.__init__(self, name, age)
+        
+    def details(self):
+        print("My name is {}".format(self.name))
+        print("age: {}".format(self.age))
+        print("position: {}".format(self.position))
+
+
+# creation of an object variable or an instance
+a = Employee('Rahul', 20, 200000, "Intern")
+
+# calling a function of the class Person using
+# its instance
+a.myfunc
+a.details()
