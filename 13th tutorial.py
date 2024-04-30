@@ -12,8 +12,8 @@ class something():
 
 # print(isinstance(1,int))
 # print(isinstance(1,(int,float)))
-# # A = something(1,2,3,4)
-# # print(isinstance(A,something))
+# A = something(1,2,3,4)
+# print(isinstance(A,something))
 
 
 # for i in enumerate([1,2,3]):
