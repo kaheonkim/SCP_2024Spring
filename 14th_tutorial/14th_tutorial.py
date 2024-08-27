@@ -15,6 +15,13 @@ import numpy as np
     
     
 # # Monte Carlo Simulation
+# A_win = 0
+# for i in range(10000):
+#     a = np.random.random() #0~1
+#     if a< 0.7:
+#         A_win += 1
+# print(A_win)
+
 # A_win = []
 # for i in range(10000):
 #     if np.random.random() <= 0.7:
@@ -24,18 +31,21 @@ import numpy as np
 
 
 
-# import matplotlib.pyplot as plt
-# x = np.linspace(-1,1,100)
+import matplotlib.pyplot as plt
+x = np.linspace(-1,1,100)
 
-# def function(x):
-#     return (x-0.5)*x*(x+0.5)
+def function(x):
+    return (x-0.5)*x*(x+0.5)
 
-# y = function(x)
+y = function(x)
 
-# plt.plot(x,y,label='f')
-# plt.plot(x,y,'o-',label='g')
-# plt.legend()
-# plt.grid()
+plt.plot(x,y, label='f')
+plt.plot(x,y,'-o',label='g')
+plt.legend()
+plt.grid()
+plt.title('graph')
+plt.xlabel('x')
+plt.ylabel('f(x)')
 # plt.show()
 
 
@@ -45,7 +55,7 @@ with open('tutorial.csv', 'r') as csvfile:
     # creating a csv reader object
     csvreader = csv.reader(csvfile)
  
-    # extracting field names through first row
+#     # extracting field names through first row
     fields = next(csvreader)
  
     # extracting each data row one by one
